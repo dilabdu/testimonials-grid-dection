@@ -28,9 +28,14 @@ img{
 }
 
 body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
 }
 
 main{
@@ -39,12 +44,13 @@ main{
 
 .container{
     width: 100%;
-    max-width: 1200px; 
-    margin-inline: auto;
-    padding-inline: 5rem;
+    max-width: 980px; 
+    margin-inline: 10rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
 }
 
-.description{
-    font-weight: 700;
-    font-size: 2rem;
-}
+
+
